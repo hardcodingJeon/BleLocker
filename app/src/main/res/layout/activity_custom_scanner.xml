@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView
+        android:id="@+id/zxing_barcode_scanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:zxing_scanner_layout="@layout/custom_barcode_scanner">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="160dp"
+            android:text="@string/Scanner__Text__Notice"
+            android:textAlignment="center"
+            android:textSize="14dp"
+            android:textColor="@color/ci_color_white" />
+
+        <ImageButton
+            android:id="@+id/Button_Scanner_Flash"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/ic_flash_on" />
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/Button_Scanner_InputCode"-->
+<!--            android:layout_width="130dp"-->
+<!--            android:layout_height="80dp"-->
+<!--            android:layout_gravity="center_horizontal|bottom"-->
+<!--            android:layout_marginBottom="30dp"-->
+<!--            android:layout_marginStart="70dp"-->
+<!--            android:background="@drawable/custom_button_input_code_definition" />-->
+    </com.journeyapps.barcodescanner.DecoratedBarcodeView>
+</RelativeLayout>

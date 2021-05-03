@@ -7,4 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="grey">#33000000</color>
+
+    <color name="ci_color_primary">#FFDD72</color>
+    <color name="ci_color_darkblue">#030135</color>
+    <color name="ci_color_white">#FFFFFF</color>
+    <color name="ci_color_blue">#0A53D1</color>
+    <color name="ci_color_accent">#FF9800</color>
 </resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true"
+    >
+
+    <rotate
+        android:duration="250"
+        android:pivotY="50%"
+        android:pivotX="50%"
+        android:toDegrees="0"
+        android:fromDegrees="45"/>
+    <!-- xml에서는 계속 0에서 45로 동작 하는데 java 코드에서는 이전 각도를 mBefore변수에 집어넣어 이전 변수에서 45도 플러스 한 각도록 회전하여
+     이어지는 회전이 가능하다-->
+
+</set>
