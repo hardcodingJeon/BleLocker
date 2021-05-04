@@ -189,8 +189,6 @@ public class MainActivity extends AppCompatActivity {
             Log.e("mBluetooth", e.toString());
         }
 
-        new Task_AdminConfirm().execute();
-
         if (!canAccessFineLocation() || !canAccessCoarseLocation()) {
             requestPermissions(INITIAL_PERMS, INITIAL_REQUEST);
         }
@@ -325,7 +323,9 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
         switch (requestCode) {
             case INITIAL_REQUEST:
-                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_DENIED) {
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    new Task_AdminConfirm().execute();
+                } else {
                     Alert_Permission(this);
                 }
                 break;
